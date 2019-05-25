@@ -43,7 +43,9 @@ export default {
    ** Axios module configuration
    */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    debug: true,
+    // API endpoint
+    baseURL: process.env.SHORTMAN_API_URL || 'http://localhost:4001/api/1.0'
   },
 
   /*
