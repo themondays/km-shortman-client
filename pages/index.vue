@@ -3,32 +3,22 @@
     <div>
       <logo />
       <h1 class="title">
-        shortman
+        Shortman
       </h1>
       <h2 class="subtitle">
-        Shortman Web-Based client (nuxt/vue)
+        Makes life easier
       </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
-          >Documentation</a
-        >
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-          >GitHub</a
-        >
-      </div>
+      <shorten-form />
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import ShortenForm from '~/components/Shorten/ShortenForm.vue'
 
 export default {
   components: {
-    Logo
+    ShortenForm
   }
 }
 </script>
@@ -37,6 +27,7 @@ export default {
 .container {
   margin: 0 auto;
   min-height: 100vh;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,20 +39,16 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 4rem;
   color: #35495e;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 2.2rem;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
