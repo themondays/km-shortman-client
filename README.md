@@ -21,6 +21,6 @@ $ npm run generate
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
 ## Todo
-- [ ] Single page application
+- [x] Single page application
 - [ ] Dockerize
 - [ ] Instructions
