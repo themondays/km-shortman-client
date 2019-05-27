@@ -44,9 +44,8 @@
 
 <script>
 import validation from '~/mixins/validation.js'
-import form from '~/mixins/form.js'
 export default {
-  mixins: [validation, form],
+  mixins: [validation],
   data() {
     return {
       short_url: false,
